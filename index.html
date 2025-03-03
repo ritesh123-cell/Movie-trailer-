@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--=============== FONT AWESOME ===============-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="style.css" />
+  <title>Movie app</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo" id="logo"><i class="fa-solid fa-film"></i> WELCOME TO VAISHNAV KOKANE AND RITESH PERDESHI MOVIES TRAILOR WEBSITE</div>
+    <form id="form">
+      <input type="text" id="search" class="search" placeholder="Search">
+    </form>
+    <button id="theme-toggle">Toggle Theme</button>
+  </header>
+
+  <main id="main">
+    <!-- Welcome Section -->
+    <div id="welcome-section" class="welcome-section">
+      <h1>Welcome to Vaishnav Kokane's Movie Website</h1>
+      <img src="vaish.jpg" alt="Vaishnav Kokane" class="welcome-photo">
+    </div>
+
+    <!-- Loading Spinner -->
+    <div id="loading" class="loading hidden">Loading...</div>
+  </main>
+
+  <!-- Video Player -->
+  <div id="video-player" class="video-player hidden">
+    <iframe id="video-iframe" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+    <button id="close-video" class="close-video">×</button>
+  </div>
+
+  <div id="loading" class="loading hidden">
+    Fetching movies... <span id="progress">0%</span>
+  </div>
+
+  <!-- Pagination -->
+  <div id="pagination">
+    <button id="prev-page">Previous</button>
+    <button id="next-page">Next</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
